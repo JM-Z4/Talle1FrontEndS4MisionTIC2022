@@ -1,0 +1,15 @@
+﻿@page
+@model Pruebas1.App.FrontEnd.Pages.ListModel
+@{
+}
+<h1>Listado de saludos</h1>
+<table>
+    @foreach (var saludo in Model.ListaSaludos)
+    {
+        <tr>
+            <td>
+                @saludo
+            </td>
+        </tr>
+    }
+</table>
