@@ -39,3 +39,7 @@ C:\Pruebas1\Pruebas1.App.FrontEnd\obj\Debug\net5.0\Pruebas1.App.FrontEnd.pdb
 C:\Pruebas1\Pruebas1.App.FrontEnd\obj\Debug\net5.0\Pruebas1.App.FrontEnd.genruntimeconfig.cache
 C:\Pruebas1\Pruebas1.App.FrontEnd\obj\Debug\net5.0\Pruebas1.App.FrontEnd.csproj.CopyComplete
 C:\Pruebas1\Pruebas1.App.FrontEnd\obj\Debug\net5.0\Razor\Pages\Saludos\List.cshtml.g.cs
+C:\Pruebas1\Pruebas1.App.FrontEnd\bin\Debug\net5.0\Pruebas1.App.Dominio.dll
+C:\Pruebas1\Pruebas1.App.FrontEnd\bin\Debug\net5.0\Pruebas1.App.Persistencia.dll
+C:\Pruebas1\Pruebas1.App.FrontEnd\bin\Debug\net5.0\Pruebas1.App.Persistencia.pdb
+C:\Pruebas1\Pruebas1.App.FrontEnd\bin\Debug\net5.0\Pruebas1.App.Dominio.pdb

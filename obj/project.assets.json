@@ -1,11 +1,49 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "Pruebas1.App.Dominio/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Pruebas1.App.Dominio.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Pruebas1.App.Dominio.dll": {}
+        }
+      },
+      "Pruebas1.App.Persistencia/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Pruebas1.App.Dominio": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Pruebas1.App.Persistencia.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Pruebas1.App.Persistencia.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Pruebas1.App.Dominio/1.0.0": {
+      "type": "project",
+      "path": "../Pruebas1.App.Dominio/Pruebas1.App.Dominio.csproj",
+      "msbuildProject": "../Pruebas1.App.Dominio/Pruebas1.App.Dominio.csproj"
+    },
+    "Pruebas1.App.Persistencia/1.0.0": {
+      "type": "project",
+      "path": "../Pruebas1.App.Persistencia/Pruebas1.App.Persistencia.csproj",
+      "msbuildProject": "../Pruebas1.App.Persistencia/Pruebas1.App.Persistencia.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "Pruebas1.App.Dominio >= 1.0.0",
+      "Pruebas1.App.Persistencia >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\DESARROLLO\\.nuget\\packages\\": {},
@@ -37,7 +75,14 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Pruebas1\\Pruebas1.App.Dominio\\Pruebas1.App.Dominio.csproj": {
+              "projectPath": "C:\\Pruebas1\\Pruebas1.App.Dominio\\Pruebas1.App.Dominio.csproj"
+            },
+            "C:\\Pruebas1\\Pruebas1.App.Persistencia\\Pruebas1.App.Persistencia.csproj": {
+              "projectPath": "C:\\Pruebas1\\Pruebas1.App.Persistencia\\Pruebas1.App.Persistencia.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

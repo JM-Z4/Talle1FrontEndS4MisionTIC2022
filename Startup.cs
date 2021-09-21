@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Pruebas1.App.Persistencia;
 
 namespace Pruebas1.App.FrontEnd
 {
@@ -24,6 +25,7 @@ namespace Pruebas1.App.FrontEnd
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            services.AddSingleton<IRespositorioSaludos, RepostorioSaludosMemoria>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

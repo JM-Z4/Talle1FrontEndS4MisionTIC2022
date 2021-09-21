@@ -2,13 +2,19 @@
 @model Pruebas1.App.FrontEnd.Pages.ListModel
 @{
 }
-<h1>Listado de saludos</h1>
+<h1>Listado de saludos varios idiomas</h1>
 <table>
-    @foreach (var saludo in Model.ListaSaludos)
+    @foreach (var saludo in Model.Saludos)
     {
         <tr>
-            <td>
-                @saludo
+            <td style="width:170px;">
+                @saludo.EnEspañol
+            </td>
+            <td style="width:170px;">
+                @saludo.EnIngles
+            </td>
+            <td style="width:170px;">
+                @saludo.EnItaliano
             </td>
         </tr>
     }
